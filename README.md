@@ -1,4 +1,4 @@
-# AdvMath_Lab2
+<h1>Advancted Mathematics Laboratory 2</h1>
 
 <h2>Part A: Data Input & Error Detection</h2>
 
