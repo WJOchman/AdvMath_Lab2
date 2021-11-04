@@ -4,4 +4,4 @@
 
 <h2>Part B: Aliasing</h2>
 
-<h3><b>Deadline:</b> 15th of November 2021</h3>
+<h3>Deadline: 15th of November 2021</h3>
