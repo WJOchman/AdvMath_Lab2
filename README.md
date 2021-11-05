@@ -14,6 +14,7 @@
     </ol>
   </li>
   <li>
+  <br>
     Task 2: The data the user entered has to be checked to ensure that it is valid. If it is valid, the program will proceed, if it is not valid, the program will display an erorr message to the user and give them the opportunity to re-enter the data.<br>
     You will need to:<br>
     <ol>
