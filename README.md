@@ -29,5 +29,23 @@
 </ul>
 
 <h2>Part B: Aliasing</h2>
+<ul>
+  <li>
+    Task 1: Proving the concept of infinite aliases.<br>
+    You will need to:<br>
+    <ol>
+      <li>Construct a time base that spans from t = 0s to t = 1.8s in increments of 0.001s.</li>
+      <li>Construct a continuous time signal which contains a 1Hz sinusoid and a 6Hz sinusoid (add two sinewaves of different frequency together to form one signal).</li>
+      <li>Use periodic sampling to convert the continuous time signal to a discrete time signal. Use a sampling frequency of 5 times the Nyquist rate.</li>
+      <li>Plot the continous time signal and the discrete time signal on a single plot.</li>
+      <li>Reduce the sampling frequency from Fs = 5Fn = 30Hz to Fs = 5Hz. Sample the continuous time signal again using the new sampling frequency.</li>
+      <li>Create a subplot (a plot which contains multiple plots) which has three rows and one column.</li>
+      <li>Construct a new discrete time signal with a frequency of 11Hz (which is an integer multiple of the sampling frequency). Plot this discrete signal along with the continuous time signal in position 2 of the subplot. Create a third discrete signal with a frequency of 5001Hz (which is an integer multiple of the sampling frequency). Plot this discrete signal along with the continuous time signal in position 3 of the subplot.</li>
+    </ol>
+  </li>
+  <br>
+  <li>
+    Task 2: Continuous time envelopes and the Nyquist frequency range (NFR)
+  </li>
 
 <h3>Deadline: 15th of November 2021</h3>
