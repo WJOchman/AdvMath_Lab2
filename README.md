@@ -19,7 +19,7 @@
     You will need to:<br>
     <ol>
       <li>Investigate logical OR and AND functions in MATLAB.</li>
-      <li>Investigate the IF and ELSEIF commands, you will need these to enable your program to make 'decisions'.</li>
+      <li>Investigate the IF and ELSIF commands, you will need these to enable your program to make 'decisions'.</li>
       <li>Investigate the 'msgbox' command, you will need this to display an error message to the user in case of an invalid condition.</li>
       <li>Investigate the 'uiwait' command, you need this to wait for the user to acknowledge your error message before your program proceeds.</li>
       <li>Investigate the phrase 'data type identification', you will need to look at the commands you can use to check what type of data the user has entered. For example, if we wanted to check if the data entered by the user was an integer, we could use the command 'isinteger' to check to see if the data is needed an integer. If the data is an integer, the 'isinteger' command will return a 1 (true), if the data is not an integer it will return 0 (false). We can use the 'true' and 'false' conditions to enable our programme to make 'decisions'.</li>
