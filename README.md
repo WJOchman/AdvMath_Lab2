@@ -13,8 +13,8 @@
       <li>Extract the three entered data from the 'answer' variable and convert it from a string to a number. Use the 'str2num' command to do this. Although when you type something into a dialog box it looks like a number, in fact it is not, it is a string and so we must convert the strings to numbers.</li>
     </ol>
   </li>
-  <li>
   <br>
+  <li>
     Task 2: The data the user entered has to be checked to ensure that it is valid. If it is valid, the program will proceed, if it is not valid, the program will display an erorr message to the user and give them the opportunity to re-enter the data.<br>
     You will need to:<br>
     <ol>
