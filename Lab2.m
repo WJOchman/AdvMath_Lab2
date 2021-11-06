@@ -16,6 +16,10 @@ if start_time >= end_time
     f = msgbox('Start time cannot be greater than end time!', 'Error!');
 elseif increment >= end_time
     f = msgbox('The increment cannot be larger than the end time!', 'Error!');
-elseif start_time || end_time || increment < 0 
-    f = msgbox('The inputs can only be positive numbers!');
-end 
+elseif start_time <= -1 
+    f = msgbox('The start time can only be positive numbers!');
+elseif end_time <= -1 
+    f = msgbox('The end time can only be positive numbers!');
+elseif increment <= -1 
+    f = msgbox('The increment can only be positive numbers!');
+end
