@@ -48,4 +48,4 @@
     Task 2: Continuous time envelopes and the Nyquist frequency range (NFR)
   </li>
 
-<h3>Deadline: 15th of November 2021</h3>
+<h3>Deadline: Monday, 15th of November 2021</h3>
