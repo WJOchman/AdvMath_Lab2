@@ -39,30 +39,55 @@ t = start_time : increment : end_time;
 x_c1 = sin(2*pi*1*t);
 x_c2 = sin(2*pi*6*t);
 figure('units', 'normalized', 'OuterPosition', [0 0 1 1]);
-plot (t, x_c1, 'LineWidth', 2, 'Color', 'blue'); 
-plot (t, x_c2, 'LineWidth', 2, 'Color', 'green'); 
+%plot (t, x_c1, 'LineWidth', 2, 'Color', 'blue'); - 1Hz Sinusoid
+% hold on;
+% plot (t, x_c2, 'LineWidth', 2, 'Color', 'green'); - 6Hz Sinusoid
+x_c3 = x_c1 + x_c2;
+plot (t, x_c3, 'LineWidth', 2, 'Color', 'blue');
+hold on;
 
-ylim([-1.1 1.1]);
+ylim([-2.1 2.1]);
 [t] = title('Time vs. Magnitude', 'Color', 'black', 'FontWeight','bold');
 t.FontSize = 16;
 [x] = xlabel('Time (s)', 'color', 'black', 'FontWeight','bold');
 [y] = ylabel('Magnitude', 'color', 'black', 'FontWeight','bold');
 x.FontSize = 14;
 y.FontSize = 14;
-hold on;
 grid on;
 
 % Converting to a discrete signal
 
-Nyquist_Frequency = 6;
+%The correct signal
+Nyquist_Frequency = 6;      %6
 Nyquist_Rate = Nyquist_Frequency * 2;
 Sampling_Frequency = Nyquist_Rate * 5;
 Sampling_Period = 1 / Sampling_Frequency;
 Period = 1 / Nyquist_Frequency;
-N = Period / Sampling_Frequency;
-n = 0:1:2*N;
+N = Period / Sampling_Period;
+n = 0:1:10.75*N;            %10.75*N
 nTs = n * Sampling_Period;
-x_disc = sin(2*pi*6*nTs);
-stem(nTs, x_disc, 'Linewidth', 2, 'Color', 'red');
+x_disc1 = sin(2*pi*6*nTs);  
+x_disc2 = sin(2*pi*1*nTs);
+x_disc3 = x_disc1 + x_disc2;
+stem(nTs, x_disc3, 'Linewidth', 2, 'Color', 'red');
+
+legend('Continuous Time Signal','Discrete Time Signal');
+fig = gcf;
+saveas(gcf, 'figure1.jpeg');
+
+% Reduce the sampling frequency from 30Hz to 5Hz. - This is where I am now!
+
+Nyquist_Frequency = 1;      %6
+Nyquist_Rate = Nyquist_Frequency * 2;
+Sampling_Frequency = Nyquist_Rate * 5;
+Sampling_Period = 1 / Sampling_Frequency;
+Period = 1 / Nyquist_Frequency;
+N = Period / Sampling_Period;
+n = 0:1:1.8*N;            %10.75*N
+nTs = n * Sampling_Period;
+x_disc1 = sin(2*pi*6*nTs);  
+x_disc2 = sin(2*pi*1*nTs);
+x_disc4 = x_disc1 + x_disc2;
+stem(nTs, x_disc4, 'Linewidth', 2, 'Color', 'red');
 
 % Part B - Task 2
