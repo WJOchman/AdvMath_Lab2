@@ -22,4 +22,10 @@ elseif end_time <= -1
     f = msgbox('The end time can only be positive numbers!');
 elseif increment <= -1 
     f = msgbox('The increment can only be positive numbers!');
-end
+elseif isempty(str2num(answer{1}))
+    f = msgbox('Input must be a number!');
+elseif isempty(str2num(answer{2}))
+    f = msgbox('Input must be a number!');
+elseif isempty(str2num(answer{3}))
+    f = msgbox('Input must be a number!');
+end 
