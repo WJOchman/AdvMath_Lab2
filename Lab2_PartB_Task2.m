@@ -37,13 +37,13 @@ end
 
 % Job 3: Convert the continuous time signal to a discrete time signal using the defined sampling freuqncy. 
 
-Nyquist_Frequency = 6;      %6
+Nyquist_Frequency = 6;    
 Nyquist_Rate = Nyquist_Frequency * 2;
 Sampling_Frequency = Nyquist_Rate * 5;
 Sampling_Period = 1 / Sampling_Frequency;
 Period = 1 / Nyquist_Frequency;
 N = Period / Sampling_Period;
-n = 0:1:10.75*N;            %10.75*N
+n = 0:1:10.75*N;           
 nTs = n * Sampling_Period;
 
 % Job 4: The program must then automatically calculate NFR. The program must inform the user whether the signal is within the NFR or not and act appropriately.
