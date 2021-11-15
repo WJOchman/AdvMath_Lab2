@@ -131,5 +131,3 @@ x_disc1 = sin(2*pi*6*nTs);
 x_disc2 = sin(2*pi*1*nTs);
 x_disc3 = x_disc1 + x_disc2;
 stem(nTs, x_disc3, 'Linewidth', 2, 'Color', 'red');
-
-% Part B - Task 2
