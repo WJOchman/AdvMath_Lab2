@@ -37,9 +37,14 @@ end
 
 % Job 3: Convert the continuous time signal to a discrete time signal using the defined sampling freuqncy. 
 
+t = start_time : increment : end_time;
+x_c = sin(2*pi*fundamental_frequency*t);
+figure('units', 'normalized', 'OuterPosition', [0 0 1 1]);
+plot (t, x_c, 'LineWidth', 2, 'Color', 'blue');
+
 Nyquist_Frequency = 6;    
 Nyquist_Rate = Nyquist_Frequency * 2;
-Sampling_Frequency = Nyquist_Rate * 5;
+Sampling_Frequency = sampling_frequency;
 Sampling_Period = 1 / Sampling_Frequency;
 Period = 1 / Nyquist_Frequency;
 N = Period / Sampling_Period;
